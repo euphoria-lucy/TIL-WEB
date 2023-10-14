@@ -1,4 +1,4 @@
-bb# 🍀 HTML, CSS, JavaScript란
+# 🍀 HTML, CSS, JavaScript란
 
 ## 🧸 HTML
 
