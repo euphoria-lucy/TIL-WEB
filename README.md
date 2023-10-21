@@ -1,2 +1,2 @@
 # TIL-WEB
-[HTML, CSS, JS] 독학
+🍀 Today I Learned 🍀 - HTML, CSS, JS 
