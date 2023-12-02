@@ -4,6 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>사용자로부터 입력 받기</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+      body {
+        padding: 16px;
+      }
+
+      h1,
+      h2 {
+        font-family: "Noto Sans KR", sans-serif;
+      }
+
+      h1 {
+        font-size: 1.2em;
+        font-weight: 500;
+        color: #555;
+      }
+
+      h2 {
+        margin-top: 1.2em;
+        margin-bottom: 0.48em;
+        font-size: 0.9em;
+        font-weight: 900;
+        color: slateblue;
+      }
+
+      h2::before {
+        content: "▶";
+        font-size: 0.5em;
+        margin-right: 8px;
+        vertical-align: 10%;
+        opacity: 0.33;
+      }
+
+      p {
+        margin-top: 0.48em;
+        line-height: 1.5em;
+      }
+
+      u {
+        text-decoration: #f00 wavy underline;
+      }
+
+      b {
+        font-weight: bold;
+      }
+      i {
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
     <!-- <form action="./01-result.html" method="get">
@@ -142,5 +192,119 @@
 
       <button type="submit">제출</button>
     </form>
+
+    <br />
+    <hr />
+    <br />
+
+    <h1>textarea 태그</h1>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <br />
+    <hr />
+    <br />
+
+    <h1>옵션들을 사용하는 태그</h1>
+
+    <h2>select, option 태그</h2>
+
+    <label for="lang">언어</label> <br />
+    <select id="lang">
+      <option value="">-- 언어 선택 --</option>
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">자바스크립트</option>
+      <option value="ts">타입스크립트</option>
+    </select>
+
+    <br /><br />
+
+    <h2>optgroup 태그</h2>
+
+    <label for="shopping">쇼핑 목록</label> <br />
+    <select id="shopping">
+      <optgroup label="과일">
+        <option value="f_apl">사과</option>
+        <option value="f_grp">포도</option>
+        <option value="f_org">오렌지</option>
+      </optgroup>
+      <optgroup label="채소">
+        <option value="v_crt">당근</option>
+        <option value="v_tmt">토마토</option>
+        <option value="v_ept">가지</option>
+      </optgroup>
+      <optgroup label="육류">
+        <option value="m_bef">소고기</option>
+        <option value="m_prk">돼지고기</option>
+        <option value="m_ckn">닭고기</option>
+      </optgroup>
+    </select>
+
+    <br /><br />
+
+    <h2>datalist 태그</h2>
+
+    <label for="job">현재 직업</label> <br />
+    <input id="job" list="jobs" />
+    <datalist id="jobs">
+      <option value="학생"></option>
+      <option value="디자이너"></option>
+      <option value="퍼블리셔"></option>
+      <option value="개발자"></option>
+    </datalist>
+
+    <br />
+    <hr />
+    <br />
+
+    <h1>정도를 표현하는 태그</h1>
+
+    <h2>progress 태그</h2>
+    <progress id="progressBar" max="100">0%</progress>
+    <button id="prgStartBtn" type="button">시작</button>
+
+    <br /><br />
+
+    <h2>meter 태그</h2>
+
+    <meter min="0" max="100" low="33" high="67" optimum="50" value="20">
+      20달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="50" value="50">
+      50달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="50" value="80">
+      80달러
+    </meter>
+
+    <br />
+
+    <meter min="0" max="100" low="33" high="67" optimum="10" value="20">
+      20달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="10" value="50">
+      50달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="10" value="80">
+      80달러
+    </meter>
+
+    <br />
+
+    <meter min="0" max="100" low="33" high="67" optimum="90" value="20">
+      20달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="90" value="50">
+      50달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="90" value="80">
+      80달러
+    </meter>
   </body>
 </html>
